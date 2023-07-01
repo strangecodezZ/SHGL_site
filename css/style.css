@@ -84,7 +84,11 @@
 .home{
     width: 100%;
     height: 90vh;
+<<<<<<< HEAD
     background-image: url(/images/students.jpg);
+=======
+    background-image: url(/images/students_on_campus-6000x4000.jpg);
+>>>>>>> 755afeb595c256bfcf59d1bdb97ca0c88d68d55a
     background-repeat: no-repeat;
     background-size: cover;
 }
