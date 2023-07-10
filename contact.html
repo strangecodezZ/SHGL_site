@@ -77,44 +77,121 @@
 
 
     <!-- Contact Form Start -->
-    <div class="container">
-	  	<div class="innerwrap">
-	  		<section class="section1 clearfix">
-	  			<div class="textcenter">
-	  				<span class="shtext">Contact Us</span>
-	  				<span class="seperator"></span>
-	  				<h1>Drop Us a Mail</h1>
-	  			</div>
-	  		</section>
-	  		<section class="section2 clearfix">
-	  			<div class="col2 column1 first">
-	  				<script src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1630.781917801793!2d-0.3902012551013953!3d5.518203714907213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdfbb34faf86169%3A0x26fce023fbd2ad16!2sGlass%20junction!5e1!3m2!1sen!2sgh!4v1688660267430!5m2!1sen!2sgh"></script><div class="sec2map" style='overflow:hidden;height:550px;width:100%;'><div id='gmap_canvas' style='height:100%;width:100%;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(19.075314480255834,72.88153973865361),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(19.075314480255834,72.88153973865361)});infowindow = new google.maps.InfoWindow({content:'<strong>My Location</strong><br>mumbai<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-	  			</div>
-	  			<div class="col2 column2 last">
-	  				<div class="sec2contactform">
-	  					<h3 class="sec2frmtitle text-center">Want to enquire? We will get bact you soon</h3>
-	  					<form action="mailto:someone@example.com" method="post" enctype="text/plain">
-	  						<div class="clearfix">
-	  							<input class="col2 first" type="text" placeholder="FirstName">
-	  							<input class="col2 last" type="text" placeholder="LastName">
-	  						</div>
-	  						<div class="clearfix">
-	  							<input  class="col2 first" type="Email" placeholder="Email">
-	  							<input class="col2 last" type="text" placeholder="Contact Number">
-	  						</div>
-	  						    <div class="clearfix">
-	  						    	<textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
-	  						    </div>
-	  						<div class="clearfix"><input type="submit" value="Send"></div>
-	  					</form>
-	  				</div>
-	  			</div>
-	  		</section>
-	  	</div>
-	</div>
+    <section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Contact Us</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row mb-5">
+							<div class="col-md-3">
+								<div class="dbox w-100 text-center">
+			        		<div class="icon d-flex align-items-center justify-content-center">
+			        			<span class="fa fa-map-marker"></span>
+			        		</div>
+			        		<div class="text">
+				            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+				          </div>
+			          </div>
+							</div>
+							<div class="col-md-3">
+								<div class="dbox w-100 text-center">
+			        		<div class="icon d-flex align-items-center justify-content-center">
+			        			<span class="fa fa-phone"></span>
+			        		</div>
+			        		<div class="text">
+				            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+				          </div>
+			          </div>
+							</div>
+							<div class="col-md-3">
+								<div class="dbox w-100 text-center">
+			        		<div class="icon d-flex align-items-center justify-content-center">
+			        			<span class="fa fa-paper-plane"></span>
+			        		</div>
+			        		<div class="text">
+				            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+				          </div>
+			          </div>
+							</div>
+							<div class="col-md-3">
+								<div class="dbox w-100 text-center">
+			        		<div class="icon d-flex align-items-center justify-content-center">
+			        			<span class="fa fa-globe"></span>
+			        		</div>
+			        		<div class="text">
+				            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+				          </div>
+			          </div>
+							</div>
+						</div>
+						<div class="row no-gutters">
+							<div class="col-md-7">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4">Leave us a message</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+				      		<div id="form-message-success" class="mb-4">
+				            Your message was sent, thank you!
+				      		</div>
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="name">Full Name</label>
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<label class="label" for="email">Email Address</label>
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="subject">Subject</label>
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="#">Message</label>
+													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Send Message" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-5 d-flex align-items-stretch">
+								<div class="info-wrap w-100 p-5 img" style="background-image: url(images/img.jpg);">
+			            </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
     <!-- Contact Form End -->
 
-
+    <!-- GMap Start -->
+    <div class="container-fluid">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1561.6421146301623!2d-0.3902013!3d5.5182037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdfbb34faf86169%3A0x26fce023fbd2ad16!2sGlass%20junction!5e1!3m2!1sen!2sgh!4v1688916571837!5m2!1sen!2sgh" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- GMap End -->
+    
 
     <!-- Back-to-top Start -->
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button> 
@@ -125,7 +202,6 @@
     <a href="https://wa.me/233508916996?text=Welcome%20to%20Seth%20Hope%20Ghana%20Limited" class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
     </a>
-    
     <!-- Whatsapp Float End -->
 
     
