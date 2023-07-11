@@ -23,11 +23,10 @@
 /* Navbar Start */
 #navbar{
     background: white;
-    /* margin-top: 3%; */
     padding-top: 3%;
 }
 #logo1{
-    position:relative; /* not here*/
+    position:relative;
     font-size: 3px;
     font-weight: 550;
     color: black;
@@ -35,14 +34,6 @@
     margin-bottom: 5%;
     padding-top: 0%;
 }
-/* #logo{
-    position:absolute;
-    top:10px; 
-    left:10px;
-    width:40px;
-    height:40px;
-    overflow:hidden;
-} */
 
 #logo span{
     color: #4169e1;
@@ -76,6 +67,9 @@
 #nav-book{
     background-color: #4169e1;
 }
+
+/* Another */
+
 /* Navbar End */
 
 
@@ -176,6 +170,8 @@
 .main-txt h1 span{
     color: #4169e1;
 }
+
+
 .packages .card{
     border-radius: 5px;
     border: none;
@@ -199,6 +195,7 @@
 }
 .packages .card .card-body p{
     font-size: 15px;
+    color: black;
 }
 .checked{
     color: #4169e1;
